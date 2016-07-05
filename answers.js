@@ -7,7 +7,7 @@ function stringCharReturner (myString) {
         return firstCharOfString;
 }
 
-console.log(stringCharReturner("money"));
+//console.log(stringCharReturner("money"));
 
 
 //Write a function that takes a string 
@@ -15,8 +15,8 @@ console.log(stringCharReturner("money"));
 // Test your function on a few inputs, including the empty string.
 
 function stringCharReturner (myString) {
-        var lastCharOfString = myString.length;
-        return lastCharOfString;
+        var lastCharOfString = (myString.length - 1);
+        return myString[lastCharOfString];
 }
 
 console.log(stringCharReturner("money"));
