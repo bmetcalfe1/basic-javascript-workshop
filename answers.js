@@ -101,9 +101,21 @@ function numMachine (str, num) {
     }
 }
 
-numMachine('bro', 3);
+// numMachine('bro', 3);
 
 // Write a function that takes a string, and returns the reverse of that string. 
 // For example, if you pass the function the string “hello”, 
 // it should return “olleh”. 
 // Test your function on a few inputs, including the empty string.
+
+function stringReverser (str) {
+    var reversedString = '';
+  
+    for (var i = str.length - 1; i >= 0; i--)
+    reversedString += str[i];
+    return reversedString;   
+}
+
+console.log(stringReverser('hello'));
+console.log(stringReverser('bro'));
+console.log(stringReverser(''));
