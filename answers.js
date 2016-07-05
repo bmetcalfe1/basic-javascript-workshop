@@ -42,8 +42,23 @@ function numAdder (num1, num2) {
     return (num1 + num2);
 }
 
+// console.log(numAdder(2, 200));
+// console.log(numAdder("cheese", 200));
+// console.log(numAdder(true, 200));
+// when you pass something other than a number it concatenates them!!
+
+
+// Write a function that takes two numbers and multiplies them together. 
+// Test your function on a few inputs. 
+// Write in your comments what happens 
+//when you pass something other than a number to your function.
+
+function numAdder (num1, num2) {
+    return (num1 * num2);
+}
+
 console.log(numAdder(2, 200));
 console.log(numAdder("cheese", 200));
 console.log(numAdder(true, 200));
-// when you pass something other than a number it concatenates them!!
+// when you pass something other than a number it says NaN!!
 
