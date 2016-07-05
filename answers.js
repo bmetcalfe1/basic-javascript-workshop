@@ -86,6 +86,24 @@ function mathMachine (num1, num2, str) {
     }
 }
 
-console.log(mathMachine(100, 5, "div"));
+// console.log(mathMachine(100, 5, "div"));
 
+// Write a function that takes a string and a number, 
+// and returns the string repeated that many number of times. 
+// Test your function with various inputs.
 
+function numMachine (str, num) {
+    var i = 0;
+    
+    while (i < num) {
+        console.log(str);
+        i++;
+    }
+}
+
+numMachine('bro', 3);
+
+// Write a function that takes a string, and returns the reverse of that string. 
+// For example, if you pass the function the string “hello”, 
+// it should return “olleh”. 
+// Test your function on a few inputs, including the empty string.
