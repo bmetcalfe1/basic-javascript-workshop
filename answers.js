@@ -143,4 +143,35 @@ function facGetter (num) {
     }
     
 }
-console.log(facGetter(4));
+// console.log(facGetter(4));
+
+// Write a function that takes a phrase as a string, 
+// and returns the longest word in that phrase. 
+// If the phrase contains more than one such word, return the first occurrence. 
+// Test your function on a few inputs.
+
+function longestWordGetter (stringz) {
+    var str = stringz.split(" ");
+    var longest = 0;
+    var word = null;
+    
+    for (var i = 0; i < str.length; i++) {
+        
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+        
+    }
+    return word;
+}
+
+console.log(longestWordGetter("Too much money"));
+console.log(longestWordGetter("Who da man"));
+
+// Write a function that takes a phrase, 
+// and returns the same phrase with every word capitalized. 
+//For example, if you pass your function "hello world", 
+// it should return “Hello World” and if you pass it “HELLO WORLD” 
+//or even "HeLLo WoRLD", it will also return "Hello World". 
+// Test your function of a few inputs.
