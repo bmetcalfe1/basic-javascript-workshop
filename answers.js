@@ -30,5 +30,20 @@ function positionReturner (theString, theNumber) {
     return theString[theNumber];
 }
 
-console.log(positionReturner("money", 3));
-console.log(positionReturner("money", 1));
+// console.log(positionReturner("money", 3));
+// console.log(positionReturner("money", 1));
+
+//Write a function that takes two numbers and adds them together. 
+//Test your function on a few inputs. 
+// Write in the comments what happens when you pass something 
+//other than a number to your function.
+
+function numAdder (num1, num2) {
+    return (num1 + num2);
+}
+
+console.log(numAdder(2, 200));
+console.log(numAdder("cheese", 200));
+console.log(numAdder(true, 200));
+// when you pass something other than a number it concatenates them!!
+
