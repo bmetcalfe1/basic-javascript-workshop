@@ -184,5 +184,19 @@ function wordCapitalizer(str) {
    return splitStr.join(' '); 
 }
 
-console.log(wordCapitalizer("ball is life"));
-console.log(wordCapitalizer("YOOOOO"));
+//console.log(wordCapitalizer("ball is life"));
+//console.log(wordCapitalizer("YOOOOO"));
+
+//Write a function that takes an array and returns the largest number of the array. 
+// Test your function on a few inputs.
+
+function largestNum(array) {
+   return Math.max.apply(null, array);
+}
+
+console.log(largestNum([10, 100, 1000]));
+
+//Write a function that takes an array, and returns a filtered array. 
+// The filtered array should only contain the truthy values from the initial array. 
+//Hint: there is an array method called filter that can help you with this :)
+
