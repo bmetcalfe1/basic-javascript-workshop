@@ -57,8 +57,35 @@ function numAdder (num1, num2) {
     return (num1 * num2);
 }
 
-console.log(numAdder(2, 200));
-console.log(numAdder("cheese", 200));
-console.log(numAdder(true, 200));
+//console.log(numAdder(2, 200));
+//console.log(numAdder("cheese", 200));
+//console.log(numAdder(true, 200));
 // when you pass something other than a number it says NaN!!
+
+// Write a function that takes two numbers and a string. 
+// If the string is ‘add’, then return the sum of the numbers. 
+// If the string is ‘subtract’, return the difference. 
+// If the string is ‘mult’, return the product. 
+// If the string is ‘div’, return the ratio. Otherwise return 0.
+
+function mathMachine (num1, num2, str) {
+    if (str === 'add') {
+        return (num1 + num2);
+    }
+    else if (str === 'subtract') {
+        return (num1 - num2);
+    }
+    else if (str === 'mult') {
+        return (num1 * num2);
+    }
+    else if (str === 'div') {
+        return (num1 / num2);
+    }
+    else {
+        return 0;
+    }
+}
+
+console.log(mathMachine(100, 5, "div"));
+
 
