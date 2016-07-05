@@ -166,8 +166,8 @@ function longestWordGetter (stringz) {
     return word;
 }
 
-console.log(longestWordGetter("Too much money"));
-console.log(longestWordGetter("Who da man"));
+//console.log(longestWordGetter("Too much money"));
+//console.log(longestWordGetter("Who da man"));
 
 // Write a function that takes a phrase, 
 // and returns the same phrase with every word capitalized. 
@@ -175,3 +175,14 @@ console.log(longestWordGetter("Who da man"));
 // it should return “Hello World” and if you pass it “HELLO WORLD” 
 //or even "HeLLo WoRLD", it will also return "Hello World". 
 // Test your function of a few inputs.
+
+function wordCapitalizer(str) {
+   var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   return splitStr.join(' '); 
+}
+
+console.log(wordCapitalizer("ball is life"));
+console.log(wordCapitalizer("YOOOOO"));
