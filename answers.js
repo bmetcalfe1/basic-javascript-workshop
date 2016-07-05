@@ -19,4 +19,16 @@ function stringCharReturner (myString) {
         return myString[lastCharOfString];
 }
 
-console.log(stringCharReturner("money"));
+//console.log(stringCharReturner("money"));
+
+// Write a function that takes a string and a number, 
+// and returns the character at the position represented by the number. 
+// The indexing of number should start at 0. 
+// Test your function on a few inputs, including the empty string.
+
+function positionReturner (theString, theNumber) {
+    return theString[theNumber];
+}
+
+console.log(positionReturner("money", 3));
+console.log(positionReturner("money", 1));
