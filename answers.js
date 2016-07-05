@@ -205,4 +205,19 @@ function isTruthy(myArray) {
   return filtered;
 }
 
-console.log(isTruthy([false, true, 0, 0.5, 10, "cool"]));
+//console.log(isTruthy([false, true, 0, 0.5, 10, "cool"]));
+
+//Write a function that takes an array of numbers, 
+// and returns the sum of all the numbers in the array.
+
+function arraySums (arrr) {
+    var sumOfArray = 0;
+    
+    for (var i = 0; i < arrr.length; i++) {
+        sumOfArray += arrr[i];
+    }
+    return sumOfArray;
+}    
+
+console.log(arraySums([10, 20, 30]));
+console.log(arraySums([1, 5, 5]));
