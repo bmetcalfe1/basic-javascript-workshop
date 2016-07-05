@@ -116,6 +116,31 @@ function stringReverser (str) {
     return reversedString;   
 }
 
-console.log(stringReverser('hello'));
-console.log(stringReverser('bro'));
-console.log(stringReverser(''));
+// console.log(stringReverser('hello'));
+// console.log(stringReverser('bro'));
+// console.log(stringReverser(''));
+
+//Write a function that takes a number and returns the factorial of a number. 
+// The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. 
+// Test your input on a few numbers, including negative numbers.
+
+function facGetter (num) {
+    if (num === 0) {
+        return 1;
+    }
+    else if (num > 0) {
+        var result = num;
+        
+        while (num > 1) {
+            result = result * (num-1);
+            num--;
+        }
+        
+        return result;
+    }
+    else {
+        console.log("Can't make a factorial from a negative number.");
+    }
+    
+}
+console.log(facGetter(4));
