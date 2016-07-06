@@ -219,5 +219,26 @@ function arraySums (arrr) {
     return sumOfArray;
 }    
 
-console.log(arraySums([10, 20, 30]));
-console.log(arraySums([1, 5, 5]));
+// console.log(arraySums([10, 20, 30]));
+// console.log(arraySums([1, 5, 5]));
+
+//Write a function that takes two arrays, 
+// and returns an array of all elements that are only in one array. 
+// For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. 
+//Test your function on different inputs. 
+// Hint: you should look up array methods indexOf and slice.
+
+function arrayFinder (arr1, arr2) {
+    var arr3 = arr1.concat(arr2);
+    var uniqueNumbers = [];
+    
+    for(var i in arr3) {
+        if(uniqueNumbers.indexOf(arr3[i]) === -1) {
+            uniqueNumbers.push(arr3[i]);
+        }
+    }
+    return uniqueNumbers;
+}
+
+console.log(arrayFinder([2, 3, 4],[3, 4, 5, 6]));
+console.log(arrayFinder([100, 200, 600],[100, 200, 300, 500]));
